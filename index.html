@@ -20,6 +20,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- styles -->
     <style>
+        html{
+            scroll-behavior: smooth;
+            scroll-padding: 100px;
+        }
         .lato {
           font-family: "Lato", sans-serif;
         }
@@ -30,11 +34,11 @@
 
     <!-- code -->
 </head>
-<body>
+<body class="lg:container lg:mx-auto">
     <!-- header -->
      <header>
         <!-- navbar -->
-         <nav>
+         <nav class="fixed top-0 w-full">
             <div class="navbar px-10 py-5 bg-base-200 shadow-md">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -97,11 +101,40 @@
 
      <!-- main -->
       <main>
+        <!-- banner -->
+         <section id="banner" class="mt-[110px] text-center flex flex-col justify-center gap-3 items-center w-11/12 mx-auto lato">
+            <div>
+                <div class="text-center flex flex-col gap-3 justify-center items-center">
+                    <p class="text-[#13131360] font-bold">Bringing Families Together ❤️‍🔥</p>
+                    <h1 class="text-[131313] font-black text-[30px] md:text-[60px]">Your Path to Adoption <br> Starts Here</h1>
+                    <p class="text-[16px]">Looking for a loyal companion? Give a loving home to a pet in need and experience unconditional love. From playful pups to cuddly kittens, <br> your perfect friend is waiting for you!"</p>
+                </div>
+                <a href="#adopt">
+                    <button class="btn rounded-lg bg-[#0E7A81] text-white m-4">View More</button>
+                </a>
+            </div>
+            <div>
+                <img src="./images/pet.webp" alt="pet img">
+            </div>
+         </section>
 
+         <!-- adopt section -->
+          <section id="adopt" class="w-11/12 mx-auto mt-20 text-center space-y-3 h-screen">
+            <h1 class="text-[131313] font-black text-[30px] md:text-[40px]">Adopt  Your  Best Friend</h1>
+            <p class="">"Adopt your new best friend today! Give a loving home to a pet in need <br> and gain a loyal companion for life."</p>
+
+            <div id="btn-container" class="space-x-4">
+                <button class="btn px-8 py-4">pet-1</button>
+                <button class="btn px-8 py-4">pet-1</button>
+                <button class="btn px-8 py-4">pet-1</button>
+                <button class="btn px-8 py-4">pet-1</button>
+               
+            </div>
+          </section>
       </main>
 
       <!-- footer -->
-      <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 mt-20">
         <nav>
             <a class="cursor-pointer text-xl lato flex gap-3 font-bold"><img src="./images/logo.webp" alt="logo">PEDDY</a>
           <p class="link link-hover">Location: av. Washington 165, NY CA 54003</p>
@@ -158,8 +191,8 @@
         <nav>
           <h6 class="footer-title">Drop a Message</h6>
           <label class="input validator">
-            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
-            <input type="email" placeholder="mail@site.com" required/>
+            <svg class="h-[1em] text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
+            <input class="text-black" type="email" placeholder="mail@site.com" required/>
           </label>
           <div class="validator-hint hidden">Enter valid email address</div>
             <button class="btn btn-soft">Subscribe</button>
