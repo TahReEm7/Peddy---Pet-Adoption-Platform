@@ -138,16 +138,18 @@
 
             <section id="card-container" class="grid grid-cols-4 gap-4 p-4">
               <!-- Card Section -->
-              <div class="col-span-3">
+              <div class="md:col-span-3 col-span-4">
                   <div id="card" class="grid grid-cols-1 md:grid-cols-3 gap-3">
                       <!-- Cards will be dynamically added here -->
                   </div>
               </div>
               
               <!-- Image Section -->
-              <div id="img" class="col-span-1 grid grid-cols-2 gap-2 md:place-items-start shadow-xl p-3 rounded-lg">
-                  <!-- Images will be dynamically added here -->
-              </div>
+            <div class="col-span-1 hidden md:grid">
+              <div id="img" class=" grid grid-cols-2 gap-2 place-items-start shadow-xl p-3 rounded-lg">
+                <!-- Images will be dynamically added here -->
+            </div>
+            </div>
           </section>
           
           
