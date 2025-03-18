@@ -133,7 +133,7 @@
             </div>
             <div class="flex justify-between items-center w-8/12 mx-auto m-5">
                 <p class="text-[#131313] font-bold">Best Deal For you</p>
-                <button class="btn rounded-lg bg-[#0E7A81] text-white m-4">Sort by Price</button>
+                <button onclick="sortPrice()" class="btn rounded-lg bg-[#0E7A81] text-white m-4">Sort by Price</button>
             </div>
 
             <section id="card-container" class="grid grid-cols-4 gap-4 p-4">
@@ -151,7 +151,14 @@
             </div>
             </div>
           </section>
-          
+          <section>
+            <!-- Open the modal using ID.showModal() method -->
+                <dialog id="modal" class="modal modal-bottom sm:modal-middle overflow-hidden">
+                  <div id="details" class="modal-box overflow-hidden">
+                    
+                  </div>
+                </dialog>
+          </section>
           
           </article>
       </main>
