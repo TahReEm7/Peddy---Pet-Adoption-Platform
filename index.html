@@ -30,6 +30,11 @@
         .inter {
             font-family: "Inter", sans-serif;
         }
+        .active{
+            border-radius: 20px;
+            background-color:#0E7A81;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
     </style>
 
     <!-- code -->
@@ -123,12 +128,12 @@
             <h1 class="text-[131313] font-black text-[30px] md:text-[40px]">Adopt  Your  Best Friend</h1>
             <p class="">"Adopt your new best friend today! Give a loving home to a pet in need <br> and gain a loyal companion for life."</p>
 
-            <div id="btn-container" class="space-x-4">
-                <button class="btn px-8 py-4">pet-1</button>
-                <button class="btn px-8 py-4">pet-1</button>
-                <button class="btn px-8 py-4">pet-1</button>
-                <button class="btn px-8 py-4">pet-1</button>
+            <div id="btn-container" class="space-x-4 flex justify-center items-center">
                
+            </div>
+            <div class="flex justify-between items-center w-8/12 mx-auto m-5">
+                <p class="text-[#131313] font-bold">Best Deal For you</p>
+                <button class="btn rounded-lg bg-[#0E7A81] text-white m-4">Sort by Price</button>
             </div>
           </section>
       </main>
@@ -199,5 +204,7 @@
           </div>
         </nav>
       </footer>
+      <!-- script -->
+       <script src="./script/main.js"></script>
 </body>
 </html>
