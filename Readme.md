@@ -27,3 +27,4 @@ The following APIs are available in Peddy:
    - **Example:** [https://openapi.programming-hero.com/api/peddy/category/dog](https://openapi.programming-hero.com/api/peddy/category/dog)
 
    - **Description:** Fetches data of pets under a specific category, in this case, dogs. This can be used to filter pets based on their category.
+
