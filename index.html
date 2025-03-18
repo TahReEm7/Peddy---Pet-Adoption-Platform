@@ -32,7 +32,7 @@
         }
         .active{
             border-radius: 20px;
-            background-color:#0E7A81;
+            background-color:#0e798152;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
     </style>
@@ -43,7 +43,7 @@
     <!-- header -->
      <header>
         <!-- navbar -->
-         <nav class="fixed top-0 w-full">
+         <nav class="fixed top-0 w-full z-50">
             <div class="navbar px-10 py-5 bg-base-200 shadow-md">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -64,7 +64,7 @@
                     </li>
                     </ul>
                   </div>
-                  <a class="cursor-pointer text-xl lato flex gap-3 font-bold"><img src="./images/logo.webp" alt="logo">PEDDY</a>
+                  <a id="home" class="cursor-pointer text-xl lato flex gap-3 font-bold"><img src="./images/logo.webp" alt="logo">PEDDY</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -124,27 +124,43 @@
          </section>
 
          <!-- adopt section -->
-          <section id="adopt" class="w-11/12 mx-auto mt-20 text-center space-y-3 h-screen">
+          <article id="adopt" class="w-11/12 mx-auto mt-20 text-center space-y-3">
             <h1 class="text-[131313] font-black text-[30px] md:text-[40px]">Adopt  Your  Best Friend</h1>
             <p class="">"Adopt your new best friend today! Give a loving home to a pet in need <br> and gain a loyal companion for life."</p>
 
-            <div id="btn-container" class="space-x-4 flex justify-center items-center">
+            <div id="btn-container" class="grid grid-cols-2 gap-3 md:space-x-4 md:flex md:justify-center md:items-center ">
                
             </div>
             <div class="flex justify-between items-center w-8/12 mx-auto m-5">
                 <p class="text-[#131313] font-bold">Best Deal For you</p>
                 <button class="btn rounded-lg bg-[#0E7A81] text-white m-4">Sort by Price</button>
             </div>
+
+            <section id="card-container" class="grid grid-cols-4 gap-4 p-4">
+              <!-- Card Section -->
+              <div class="col-span-3">
+                  <div id="card" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                      <!-- Cards will be dynamically added here -->
+                  </div>
+              </div>
+              
+              <!-- Image Section -->
+              <div id="img" class="col-span-1 grid grid-cols-2 gap-2 md:place-items-start shadow-xl p-3 rounded-lg">
+                  <!-- Images will be dynamically added here -->
+              </div>
           </section>
+          
+          
+          </article>
       </main>
 
       <!-- footer -->
       <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 mt-20">
         <nav>
             <a class="cursor-pointer text-xl lato flex gap-3 font-bold"><img src="./images/logo.webp" alt="logo">PEDDY</a>
-          <p class="link link-hover">Location: av. Washington 165, NY CA 54003</p>
-          <p class="link link-hover">Phone: +31 85 964 47 25</p>
-          <p class="link link-hover">Email: info@yourdomain.com</p>
+          <p class="link link-hover">Location: Uttara , Dhaka</p>
+          <p class="link link-hover">Phone: 01936532058</p>
+          <p class="link link-hover">Email: tahreemhossain0@gmail.com</p>
           <p class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</p>
           <div>
             <nav>
